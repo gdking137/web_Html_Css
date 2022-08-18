@@ -4,9 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll</title>
-    <style></style>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      aside {
+        margin: auto;
+      }
+
+      div {
+        width: 250px;
+        height: 250px;
+        background-color: black;
+        margin: auto;
+        border-radius: 4px;
+        content: url(img/carrot.png);
+      }
+      div.special {
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        margin: auto;
+        border-radius: 4px;
+        content: url(img/rabbit.png);
+
+      }
+    </style>
   </head>
   <body>
-    <script></script>
+    <aside>
+      <button class="scroll-into">scroll into special</button></br>
+    </aside>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="special"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script>
+      const scrollInto = document.querySelector(".scroll-into");
+      
+      
+      scrollInto.addEventListener("click", () => {
+        special.scrollIntoView();
+      });
+    </script>
   </body>
 </html>
