@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <title>WindowSize</title>
+    <style>
+      .tag {
+        display: inline-block;
+        background-color: thistle;
+        padding: 16px;
+        margin-top: 16px;
+        font-size: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tag">Window Size</div>
+    <script>
+      window.addEventListener("resize", () => {
+        console.log(`window.screen: ${window.screen.width}, ${window.screen.height}`);
+        console.log(`window.outer: ${window.outerWidth}, ${window.outerHeight}`);
+        console.log(`window.inner: ${window.innerWidth}, ${window.innerHeight}`);
+        console.log(`documentElement.clientWitdh: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`);
+      });
+    </script>
+  </body>
+</html>
