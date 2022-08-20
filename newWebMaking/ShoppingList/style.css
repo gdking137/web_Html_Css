@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  background-color: #ced3df;
+  text-align: center;
+}
+
+.list {
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.header {
+  height: 48px;
+  padding: 8px;
+  font-size: 24px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    337deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(134, 150, 40, 1) 0%,
+    rgba(64, 70, 38, 1) 25%,
+    rgba(88, 98, 39, 1) 26%,
+    rgba(168, 189, 41, 1) 50%,
+    rgba(194, 219, 41, 1) 79%,
+    rgba(62, 67, 38, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 20px 20px 0 0;
+  color: white;
+}
