@@ -12,13 +12,13 @@ function onAdd() {
   const item = createItem(text);
 
   items.appendChild(item);
-
+  item.scrollIntoView({ block: "center" });
   input.value = "";
   input.focus();
 }
 
 function createItem(text) {
-  const itemRow = document.document.createElement("li");
+  const itemRow = document.createElement("li");
   itemRow.setAttribute("class", "item_row");
 
   const item = document.createElement("div");
@@ -49,5 +49,7 @@ addBtn.addEventListener("click", () => {
 });
 
 input.addEventListener("keypress", (event) => {
-  console.log("key");
+  if (event.key === "Enter") {
+    onAdd();
+  }
 });
