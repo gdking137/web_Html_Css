@@ -5,6 +5,7 @@ button {
 }
 
 body {
+  text-align: center;
 }
 
 .game {
@@ -54,6 +55,7 @@ body {
 }
 
 .game_field {
+  position: relative;
   width: 100%;
   height: 100%;
   margin-top: 40px;
