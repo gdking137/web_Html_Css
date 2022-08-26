@@ -41,6 +41,24 @@ function showTimerAndScore() {
   gameScore.style.visibility = "visible";
 }
 
+function startGameTimer() {
+  let remainingTimeSec = game_Duration_Sec;
+  updateTimerText(remainingTimeSec);
+  timer = setInterval(() => {
+    if (remainingTimeSec <= 0) {
+      clearInterval(timer);
+      return;
+    }
+    updateTimerText(--remainingTimeSec);
+  }, 1000);
+}
+
+function updateTimerText(sec) {
+  const minutes = Math.floor(time / 60);
+  const seconds = time % 60;
+  gameTimer.innerText = "${minutes}:${seconds}";
+}
+
 function initgame() {
   //bug+carrot spawn and place them into the field
   field.innerHTML = "";
